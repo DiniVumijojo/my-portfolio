@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dini Vumijojo — Cybersecurity &amp; IT Infrastructure Portfolio</title>
+<meta name="description" content="Dini Vumijojo — Final-year IT student specialising in cybersecurity and infrastructure, building toward AI security.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Scan-line grid background layer -->
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">DV<span class="nav-logo-dot">_</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Let's talk</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow mono">// johannesburg, south africa &nbsp;·&nbsp; open to security &amp; AI roles</p>
+
+    <h1 class="hero-name">Dini Vumijojo</h1>
+
+    <div class="hero-role mono">
+      <span class="role-prefix">$ whoami &gt;</span>
+      <span id="roleText" class="role-text"></span><span class="role-caret">|</span>
+    </div>
+
+    <p class="hero-summary">
+      Final-year IT student (Infrastructure &amp; Security) building toward a career at the
+      intersection of AI and security. From hardening Azure VMs and running SOC investigations
+      in Splunk, to training a local LLM to triage security logs, I move comfortably between
+      traditional security work and applying AI to it — equally at home securing systems as
+      I am building AI tools that help secure them.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+
+    <div class="hero-social">
+      <a href="https://github.com/DiniVumijojo" target="_blank" rel="noopener">GitHub</a>
+      <span class="dot">·</span>
+      <a href="https://www.linkedin.com/in/dini-vumijojo32556033b" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="dot">·</span>
+      <a href="https://github.com/DiniVumijojo/dinivumijojo_portfolio" target="_blank" rel="noopener">Portfolio Repo</a>
+    </div>
+  </div>
+
+  <div class="hero-photo-wrap reveal">
+    <div class="hero-photo" id="heroPhoto">
+      <img src="images/profile.jpg" alt="Portrait of Dini Vumijojo" id="profileImg">
+      <div class="hero-photo-fallback mono" id="photoFallback">DV</div>
+    </div>
+    <div class="hero-photo-ring"></div>
+    <div class="hero-photo-tag mono">STATUS: <span class="ok">ACTIVE</span></div>
+  </div>
+</section>
+
+<main>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">01 / ABOUT</p>
+      <h2 class="section-title">Summary</h2>
+
+      <div class="about-grid">
+        <p class="about-text">
+          I'm a final-year Diploma in IT student at Belgium Campus ITversity, specialising in
+          Infrastructure &amp; Security, with a 71.3% weighted average and 11 module distinctions.
+          My work spans defensive security and SIEM operations (Splunk), cloud identity and network
+          security (Microsoft Azure, Entra ID, NSGs), and building AI tools that automate and
+          strengthen security workflows — from a local LLM that triages security logs to chatbots
+          built with Gemini. I'm working toward a career where AI and security meet, equally
+          comfortable investigating an incident as I am prompt-engineering the tool that flags it.
+          I completed a three-month Virtual Cybersecurity Internship Programme in web application
+          security and penetration testing with MWR CyberSec, and I build labs and small applications
+          to keep my skills current between classes. I'm currently studying towards Microsoft SC-900
+          and plan to sit AWS Certified Cloud Practitioner next.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-value mono">71.3%</span>
+            <span class="stat-label">Weighted average</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value mono">11</span>
+            <span class="stat-label">Module distinctions</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value mono">2027</span>
+            <span class="stat-label">Expected graduation</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value mono">3mo</span>
+            <span class="stat-label">Security internship</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills" id="skills">
+        <div class="skill-group">
+          <h3 class="skill-group-title mono">Security &amp; SIEM</h3>
+          <div class="chip-row">
+            <span class="chip">Splunk Enterprise Security</span>
+            <span class="chip">Incident Response</span>
+            <span class="chip">Threat Hunting</span>
+            <span class="chip">Log Analysis</span>
+            <span class="chip">Burp Suite</span>
+            <span class="chip">Nmap</span>
+            <span class="chip">Zero Trust</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title mono">Cloud &amp; Identity</h3>
+          <div class="chip-row">
+            <span class="chip">Microsoft Azure</span>
+            <span class="chip">Microsoft Entra ID</span>
+            <span class="chip">IAM</span>
+            <span class="chip">Network Security Groups</span>
+            <span class="chip">Azure Monitor</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title mono">Infrastructure &amp; Support</h3>
+          <div class="chip-row">
+            <span class="chip">Windows Server / AD DS</span>
+            <span class="chip">Group Policy</span>
+            <span class="chip">DNS / DHCP</span>
+            <span class="chip">Linux (Ubuntu, Kali)</span>
+            <span class="chip">Jira · Zendesk</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title mono">Programming &amp; AI</h3>
+          <div class="chip-row">
+            <span class="chip">Python</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">PowerShell / Bash</span>
+            <span class="chip">Prompt Engineering</span>
+            <span class="chip">Ollama / Llama 3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">02 / EXPERIENCE</p>
+      <h2 class="section-title">Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Virtual Cybersecurity Internship Programme</h3>
+              <span class="timeline-date mono">Mar 2026 – Jun 2026 · Remote</span>
+            </div>
+            <p class="timeline-org">MWR CyberSec</p>
+            <ul class="timeline-list">
+              <li>Completed a structured three-month virtual internship programme in web application security and penetration testing, from environment setup through advanced exploitation and mitigation.</li>
+              <li>Configured Burp Suite (Proxy, Repeater, Intruder, Decoder) with FoxyProxy to intercept and analyse HTTP/HTTPS traffic, including Base64, URL encoding and hashing.</li>
+              <li>Identified authentication and access-control weaknesses — username enumeration, weak password policies, brute-force attacks via Hydra — and analysed JWT structure against the IAAA model.</li>
+              <li>Exploited reflected and DOM-based XSS, examined SOP/CORS misconfigurations, detected CSRF vulnerabilities, and performed SQL injection testing.</li>
+              <li>Assessed file-upload vulnerabilities for RCE risk and documented findings with remediation recommendations throughout.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Head of Media</h3>
+              <span class="timeline-date mono">2024 – 2025</span>
+            </div>
+            <p class="timeline-org">Kempton Park Campus</p>
+            <ul class="timeline-list">
+              <li>Managed and created digital content for campus events and student initiatives.</li>
+              <li>Led media coverage — photography, videography, social media — and coordinated student teams to promote events.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">03 / PROJECTS</p>
+      <h2 class="section-title">Projects</h2>
+
+      <div class="filter-row mono" id="filterRow">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="security">Security</button>
+        <button class="filter-btn" data-filter="cloud">Cloud</button>
+        <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+
+        <a class="project-card reveal" data-tags="security ai" href="https://github.com/DiniVumijojo/AI-Powered-Security-Log-Analyzer-" target="_blank" rel="noopener">
+          <div class="project-head">
+            <h3>AI-Powered Security Log Analyzer</h3>
+            <span class="project-tag mono">AI · Security</span>
+          </div>
+          <p class="project-desc">
+            An application that automates security log analysis, event classification and incident
+            summarisation using a locally hosted LLM — removing the need to manually read every raw
+            log line, and turning a multi-step manual review process into a single pipeline.
+          </p>
+          <ul class="project-points">
+            <li>Integrated Ollama (Llama 3) locally and applied prompt engineering to improve accuracy and clarity of AI-generated incident reports.</li>
+            <li>Built Regex-based preprocessing with automated data redaction to protect sensitive information and support POPIA compliance.</li>
+            <li>Automated log parsing, threat classification and reporting end-to-end.</li>
+          </ul>
+          <div class="stack-row mono">
+            <span>Python</span><span>Ollama / Llama 3</span><span>Regex</span><span>JSON</span>
+          </div>
+        <span class="project-link mono">View README on GitHub &rarr;</span>
+        </a>
+
+        <a class="project-card reveal" data-tags="security" href="https://github.com/DiniVumijojo/Enterprise-SOC-Monitoring-Incident-Response-Lab" target="_blank" rel="noopener">
+          <div class="project-head">
+            <h3>Enterprise SOC Monitoring &amp; Incident Response Lab</h3>
+            <span class="project-tag mono">Security (in progress) </span>
+          </div>
+          <p class="project-desc">
+            An end-to-end SOC lab integrating Splunk Enterprise, Ubuntu Server and Kali Linux to
+            simulate enterprise security monitoring and incident response workflows.
+          </p>
+          <ul class="project-points">
+            <li>Simulated 10+ attack scenarios, including SSH brute-force and network reconnaissance, to generate realistic security events.</li>
+            <li>Built Splunk dashboards, correlation searches and alerts that flagged failed logins and scanning activity in near real time.</li>
+            <li>Investigated incidents via authentication logs and source IPs, then implemented Fail2Ban to auto-contain malicious hosts.</li>
+          </ul>
+          <div class="stack-row mono">
+            <span>Splunk Enterprise</span><span>Kali Linux</span><span>Hydra</span><span>Fail2Ban</span>
+          </div>
+        <span class="project-link mono">View README on GitHub &rarr;</span>
+        </a>
+
+        <a class="project-card reveal" data-tags="cloud security" href="https://github.com/DiniVumijojo/Azure-Cloud-Security-Monitoring-Lab" target="_blank" rel="noopener">
+          <div class="project-head">
+            <h3>Azure Cloud Security Monitoring Lab</h3>
+            <span class="project-tag mono">Cloud · Security</span>
+          </div>
+          <p class="project-desc">
+            Deployed and secured a Linux VM in Microsoft Azure, applying identity, network and
+            monitoring controls to a standard cloud security baseline.
+          </p>
+          <ul class="project-points">
+            <li>Used Microsoft Entra ID and Network Security Groups to implement least-privilege access controls.</li>
+            <li>Configured Azure Monitor and Log Analytics to centralise and investigate events from simulated SSH activity and network scans.</li>
+            <li>Documented the full deployment and security configuration to a professional standard.</li>
+          </ul>
+          <div class="stack-row mono">
+            <span>Microsoft Azure</span><span>Entra ID</span><span>NSGs</span><span>Azure Monitor</span>
+          </div>
+        <span class="https://github.com/DiniVumijojo/Azure-Cloud-Security-Monitoring-Lab">View README on GitHub &rarr;</span>
+        </a>
+
+        <a class="project-card reveal" data-tags="security" href="https://github.com/DiniVumijojo/network-security-nmap-lab" target="_blank" rel="noopener">
+          <div class="project-head">
+            <h3>Network Security Assessment Lab</h3>
+            <span class="project-tag mono">Security</span>
+          </div>
+          <p class="project-desc">
+            An isolated virtual lab built with Kali Linux and Metasploitable 2 to assess network
+            exposure and firewall behaviour.
+          </p>
+          <ul class="project-points">
+            <li>Ran 10+ Nmap reconnaissance scans — SYN, TCP Connect, UDP and ACK — to identify open ports and exposed services.</li>
+            <li>Analysed port states (open, closed, filtered) to evaluate vulnerabilities and attack surface.</li>
+            <li>Produced a findings report usable as a template for future assessments.</li>
+          </ul>
+          <div class="stack-row mono">
+            <span>Kali Linux</span><span>Nmap</span><span>VirtualBox</span><span>TCP/IP</span>
+          </div>
+        <span class="https://github.com/DiniVumijojo/network-security-nmap-lab">View README on GitHub &rarr;</span>
+        </a>
+
+        <a class="project-card reveal" data-tags="infrastructure" href="https://github.com/DiniVumijojo/Enterprise-Active-Directory-Windows-Server-Administration-Lab-" target="_blank" rel="noopener">
+          <div class="project-head">
+            <h3>Enterprise AD &amp; Windows Server Administration Lab</h3>
+            <span class="project-tag mono">Infrastructure</span>
+          </div>
+          <p class="project-desc">
+            A Windows Server Active Directory environment built to simulate enterprise IT support
+            and infrastructure administration.
+          </p>
+          <ul class="project-points">
+            <li>Managed users, security groups, Organizational Units and Group Policy Objects.</li>
+            <li>Implemented DNS and DHCP services and joined multiple Windows 11 clients to the domain.</li>
+            <li>Carried out account management and policy administration tasks end-to-end.</li>
+          </ul>
+          <div class="stack-row mono">
+            <span>Windows Server</span><span>AD DS</span><span>Group Policy</span><span>PowerShell</span>
+          </div>
+        <span class="https://github.com/DiniVumijojo/Enterprise-Active-Directory-Windows-Server-Administration-Lab-">View README on GitHub &rarr;</span>
+        </a>
+
+        <a class="project-card reveal" data-tags="ai" href="https://github.com/DiniVumijojo/AI-Powered-University-Application-Assistant" target="_blank" rel="noopener">
+          <div class="project-head">
+            <h3>AI-Powered Student Application Assistant</h3>
+            <span class="project-tag mono">AI</span>
+          </div>
+          <p class="project-desc">
+            An AI chatbot that guides prospective students through university application processes
+            and programme information.
+          </p>
+          <ul class="project-points">
+            <li>Integrated Google Gemini with prompt engineering and AI persona controls to improve response quality.</li>
+            <li>Explored NLP/NLU concepts to make the chatbot more effective at handling real queries.</li>
+            <li>Owned frontend and backend development, requirements gathering, testing and documentation end-to-end.</li>
+          </ul>
+          <div class="stack-row mono">
+            <span>HTML/CSS</span><span>JavaScript</span><span>Gemini API</span><span>NLP</span>
+          </div>
+        <span class="https://github.com/DiniVumijojo/AI-Powered-University-Application-Assistant">View README on GitHub &rarr;</span>
+        </a>
+
+        <a class="project-card reveal" data-tags="ai" href="https://github.com/Ipeleng2024/student-accommodation-portal" target="_blank" rel="noopener">
+          <div class="project-head">
+            <h3>AI-Enhanced Residence Management Platform</h3>
+            <span class="project-tag mono">AI </span>
+          </div>
+          <p class="project-desc">
+            A full-stack web platform to digitise communication and admin between students and
+            residence management — currently in progress.
+          </p>
+          <ul class="project-points">
+            <li>Building student and management portals for complaint filing, rent/service payments and real-time room availability.</li>
+            <li>Automating manual workflows such as maintenance requests and appointment scheduling.</li>
+            <li>Designing reporting and analytics features to support data-driven decisions for management.</li>
+          </ul>
+          <div class="stack-row mono">
+            <span>JavaScript</span><span>SQL</span><span>AI Chatbot</span><span>Workflow Automation</span>
+          </div>
+        <span class="https://github.com/Ipeleng2024/student-accommodation-portal">View README on GitHub &rarr;</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section" id="certifications">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">04 / CERTIFICATIONS</p>
+      <h2 class="section-title">Certifications &amp; Learning</h2>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-status mono status-progress">COMPLETED</div>
+          <h3>Microsoft Certified: SC-900</h3>
+          <p>Security, Compliance, and Identity Fundamentals</p>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-status mono status-planned">PLANNED</div>
+          <h3>AWS Certified Cloud Practitioner</h3>
+          <p>Foundational cloud concepts, AWS core services, security and billing.</p>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-status mono status-done">COMPLETED</div>
+          <h3>Full Stack Web Development</h3>
+          <p>FNB App of the Year Certification</p>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-status mono status-done">COMPLETED</div>
+          <h3>Cybersecurity Job Simulation</h3>
+          <p>Deloitte, via Forage</p>
+        </div>
+      </div>
+
+      <div class="education-card reveal">
+        <div class="cert-status mono status-progress">FEB 2024 – DEC 2026 (EXPECTED)</div>
+        <h3>Diploma in Information Technology — Infrastructure &amp; Security Specialisation</h3>
+        <p>Belgium Campus ITversity · 71.3% weighted average · 11 module distinctions</p>
+        <p class="edu-modules">Operating Systems (Linux) · System Administration · Computer Networking · Programming (C#, Python) · Cloud-Native Application Architecture · Database Systems · Computer Architecture · IoT · Penetration Testing &amp; Ethical Hacking</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">05 / CONTACT</p>
+      <h2 class="section-title">Let's Talk</h2>
+      <p class="contact-intro">
+        Open to roles in cybersecurity, AI security, and AI development — and always happy to
+        talk about SOC labs, cloud security, or building AI tools for security work. Reach out
+        directly below.
+      </p>
+
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="mailto:vumijojodini@gmail.com">
+          <span class="contact-label mono">EMAIL</span>
+          <span class="contact-value">vumijojodini@gmail.com</span>
+        </a>
+        <a class="contact-card reveal" href="tel:+27662298943">
+          <span class="contact-label mono">PHONE</span>
+          <span class="contact-value">+27 66 229 8943</span>
+        </a>
+        <a class="contact-card reveal" href="https://www.linkedin.com/in/dini-vumijojo-32556033b/" target="_blank" rel="noopener">
+          <span class="contact-label mono">LINKEDIN</span>
+          <span class="contact-value">Dini vumijojo</span>
+        </a>
+        <a class="contact-card reveal" href="https://github.com/DiniVumijojo" target="_blank" rel="noopener">
+          <span class="contact-label mono">GITHUB</span>
+          <span class="contact-value">DiniVumijojo</span>
+        </a>
+        <div class="contact-card no-link reveal">
+          <span class="contact-label mono">LOCATION</span>
+          <span class="contact-value">Johannesburg, Gauteng, ZA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="mono">© <span id="year"></span> Dini Vumijojo — built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
